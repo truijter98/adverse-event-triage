@@ -19,3 +19,4 @@ reports = response.json()["results"]
 print(f"{len(reports)} meldingen opgehaald\n")
 print(json.dumps(reports[0], indent=2))
 
+json.dump(reports, open("drills/sample.json", "w"))
